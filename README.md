@@ -2,6 +2,8 @@
 
 > An interactive, production-ready web platform modeled after Chess.com, dedicated to preserving and teaching the ancient Indian game of **Chaturanga** — the 6th-century Gupta Empire ancestor of modern chess.
 
+🌐 **Live Demo:** [https://shivanshswe-cmd.github.io/chaturanga-academy/](https://shivanshswe-cmd.github.io/chaturanga-academy/)
+
 ---
 
 ## 🌟 Key Features
@@ -19,7 +21,16 @@
   - **Bare King (Nirvriddhi)**: Stripping the opponent down to only their Raja grants an instant victory (drawn if both kings are bared sequentially).
   - **Stalemate**: In Chaturanga, a player with no legal moves who is not in check **wins the game**.
 
-### 2. "The Guru" — Real-Time Interactive Coach
+### 2. Acoustic Physical Modeling Sound Engine (Wooden Chess Pieces)
+- Modeled after real weighted wooden Staunton pieces on a solid wood board:
+  - **Move**: High-frequency lacquer wood contact transient (bandpass noise at 3.2kHz) + hollow board cavity resonance (decaying 310Hz wood knock) + weighted base sub-thud (110Hz).
+  - **Capture**: Distinct piece-on-piece collision clack followed by the capturing piece landing firmly on the wood square (double-clack impact).
+  - **Check**: Authoritative hardwood gavel strike with acoustic overtones.
+  - **Victory**: Warm resonant rosewood marimba arpeggio.
+  - **Mistake**: Muffled dull hollow wood tap.
+  - **Organic Variation**: ±3% micro-pitch jitter on every ply to prevent mechanical repetition.
+
+### 3. "The Guru" — Real-Time Interactive Coach
 - Real-time move evaluation pipeline on every user ply.
 - Centipawn delta calculation comparing the user's move to the minimax optimal line.
 - Classification into **Best (!)**, **Good**, **Inaccuracy (?!)**, **Mistake (?)**, and **Blunder (??)**.
